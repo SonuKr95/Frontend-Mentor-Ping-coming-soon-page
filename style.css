@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.main-cont {
+  margin: 20% auto;
+  max-width: 400px;
+}
+
+.common {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 0px 1em;
+}
+button {
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding: 1em 2em;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--Blue);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input[type="email"] {
+  /* background-color: black; */
+  width: 70%;
+  margin: auto;
+  padding: 1em 2em;
+  border-radius: 20px;
+  border: 1px solid var(--Blue);
+}
+
+#email {
+  margin-bottom: 1em;
+}
+.logo {
+  margin-bottom: 2em;
+}
+
+span {
+  display: inline-block;
+  color: var(--Gray);
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+.common p {
+  color: black;
+  font-weight: 300;
+  margin-bottom: 2em;
+  font-size: 0.8em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: var(--Gray);
+  font-size: 0.7em;
+}
+.image {
+  margin-bottom: 4em;
+}
+.icons {
+  margin-bottom: 1em;
+}
+.icons i {
+  text-align: center;
+  padding: 0.5em 0.65em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 1px solid rgb(225, 221, 221);
+  color: var(--Blue);
+}
+.icons i:hover {
+  cursor: pointer;
+}
+
+#message {
+  color: red;
+}
+
+.show {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .logo {
+    margin-bottom: 1em;
+  }
+  .userinput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin-bottom: 1.2em;
+    width: 40%;
+  }
+  input[type="email"] {
+    width: 100%;
+  }
+
+  #message {
+    position: absolute;
+    margin: 0;
+    top: 45%;
+  }
+  .main-cont {
+    margin: 5% auto;
+  }
+
+  .icons i:nth-child(2):hover {
+    color: #fff;
+    background-color: var(--Blue);
+  }
+}
